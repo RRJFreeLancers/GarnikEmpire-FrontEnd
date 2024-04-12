@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import WomenCat from '../../src/assets/Images/WomenCat.png'
 import manCat from '../../src/assets/Images/ManCat.png'
 import Accessory from '../../src/assets/Images/Accessory.png'
+import Product from './Product';
 
 
 
@@ -102,6 +103,9 @@ const Home = () => {
             
             
             </div>
+
+            {/* products */}
+            <Product/>
         </>
     );
 };

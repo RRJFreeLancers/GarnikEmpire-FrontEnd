@@ -1,10 +1,13 @@
 import React from 'react'
 import image from "../assets/Images/image.png"
+import { SlMagnifier } from "react-icons/sl";
+import { IoFilterSharp } from "react-icons/io5";
+
 
 const Product = () => {
   const array=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
   return (
-    <section className='w-full px-10 mt-[100px] flex flex-col gap-5'>
+    <section className='w-full px-5 mt-[100px] flex flex-col gap-5'>
         <h1 className='text-3xl font-bold'>PRODUCT OVERVIEW</h1>
         <div className='w-full flex justify-between text-[gray] font-semibold'>
           <ul className='flex gap-x-10 '>
@@ -13,8 +16,10 @@ const Product = () => {
             <li>Men</li>
           </ul>
           <div className='flex gap-x-5'>
-            <div className='px-4 py-2 border'>Filter</div>
-            <div className='px-4 py-2 border'>Search</div>
+            <div className='px-4 py-2 border flex justify-center items-center gap-2'><IoFilterSharp />Filter</div>
+            <div className='px-4 py-2 border flex justify-center items-center gap-2'> <SlMagnifier size={15}/>Search</div>
+           
+
           </div>
         </div>
 

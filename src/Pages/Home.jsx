@@ -39,6 +39,7 @@ const Home = () => {
                                 classNameName="d-block w-100"
                                 // src={item.avatar}
                                 src="https://ik.imagekit.io/bhsa3gea8yj/homepage_images/banner/IMG1712402209-0.jpg"
+                                
                                 alt={`Carousel Image ${item.id}`}
                                 style={{ height: '400px' }}
                             />
@@ -51,7 +52,7 @@ const Home = () => {
             </div>
 
             {/* Men,Women and Accessories  */}
-            <div className="flex justify-around gap-4 mt-10">
+            <div className="flex justify-around gap-4 mt-10 px-5">
 
                 <div className="relative border border-black h-[251px]">
 
@@ -94,9 +95,9 @@ const Home = () => {
 
                         </div>
 
-                        <div className="mt-5">
+                        <div>
 
-                            <img src={Accessory} alt="" className="h-[202px]"/>
+                            <img src={Accessory} alt="" className="h-[250px]"/>
                         </div>
 
                 </div>

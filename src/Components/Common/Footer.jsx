@@ -11,9 +11,11 @@ import chat from '../../../src/assets/Images/chat.png'
 const Footer = () => {
 
   return (
+    /*  bg-[#454848] */
+
 
     <>
-        <footer className="mt-14 w-full bg-[#454848] sm:py-5 md:py-10 text-white flex flex-col sm:gap-8 gap-4 cursor-pointer">
+        <footer className="mt-14 w-full bg-[#154253] sm:py-5 md:py-10 text-white flex flex-col sm:gap-8 gap-4 cursor-pointer">
             <div className="lg:w-[900px] sm:w-full mx-auto flex sm:flex-col md:flex-row md:justify-between sm:gap-6 md:px-5 text-center">
                 <div className="hidden md:block">logo here</div>
                 <div className="flex flex-col sm:gap-3 md:gap-5 lg:border-l border-white px-4">

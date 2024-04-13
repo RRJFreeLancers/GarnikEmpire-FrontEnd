@@ -1,10 +1,13 @@
 import React from 'react'
-import image from "../assets/Images/image.png"
+import image from "../assets/Images/list.png"
 import { SlMagnifier } from "react-icons/sl";
 import { IoFilterSharp } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom';
 
 
 const Product = () => {
+
+  const navigate = useNavigate();
   const array=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]
   return (
     <section className='w-full px-5 mt-[100px] flex flex-col gap-5'>
@@ -29,9 +32,11 @@ const Product = () => {
           array.map((item,i)=>(
             <div key={i} className='flex flex-col gap-2'>
 
-                <div className=' w-[250px] h-[300px] overflow-hidden'>
-                  <img src={image} alt="" className='w-full h-full hover:transform hover:scale-105 duration-300 '/>
-                </div>
+                  <div className='relative w-[250px] h-[300px] overflow-hidden'>
+                    <img src={image} alt="" className='w-full h-full hover:transform hover:scale-105 duration-300' />
+                    <button className='absolute top-[150px] left-[70px] rounded  h-[50px] w-[100px] inset-0 flex justify-center items-center z-49 bg-white' onClick={()=>{navigate('/productlist')}}>ShopNow</button>
+                  </div>
+
 
                   <div className='w-full flex justify-around cursor-pointer text-[14px]'>
                       <div>
